@@ -13,3 +13,19 @@
     background: rgb(76,195,180);
     background: linear-gradient(12deg, rgba(76,195,180,1) 21%, rgba(255,0,0,1) 79%);
 }
+
+.green {
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: black;
+}
+
+.blue{
+    background-color: blue;
+}
