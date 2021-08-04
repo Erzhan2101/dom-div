@@ -24,10 +24,22 @@ const color = ["black", "red", "blue", "green" , "bg-div"]
 // })
 
 
+// wrapper.forEach((el, idx) => {
+//     el.addEventListener("click", () => {
+//         const random = Math.floor(Math.random() * 5)
+//         wrapper.forEach((el) => el.removeAttribute("class"))
+//         el.classList.add(color[random])
+//     })
+// })
+
+
 wrapper.forEach((el, idx) => {
     el.addEventListener("click", () => {
         const random = Math.floor(Math.random() * 5)
         wrapper.forEach((el) => el.removeAttribute("class"))
-        el.classList.add(color[random])
+        if ( idx === wrapper.length -1){
+          idx = -1
+        }
+        wrapper[idx+1].classList.add(color[random])
     })
 })
